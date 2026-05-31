@@ -1,7 +1,7 @@
 {
   "name": "vipstarcoind-rpc",
   "description": "VIPSTARCOIN Client Library to connect to VIPSTARCOIN Core via RPC",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "author": {},
   "contributors": [],
   "keywords": [
@@ -10,26 +10,28 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/fkfk/vipstarcoind-rpc.git"
+    "url": "git://github.com/nezirin777/vipstarcoind-rpc.git"
   },
   "license": "MIT",
   "main": "lib/index.js",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "test": "mocha test -R spec",
-    "coverage": "istanbul cover node_modules/.bin/_mocha -- --recursive"
+    "coverage": "nyc mocha --recursive"
   },
   "devDependencies": {
-    "async": "^0.9.0",
-    "chai": "^1.10.0",
-    "coveralls": "^2.11.2",
-    "istanbul": "^0.3.5",
-    "mocha": "^2.1.0",
-    "sinon": "^1.12.2"
+    "async": "^3.2.5",
+    "chai": "^4.3.10",
+    "mocha": "^10.3.0",
+    "nyc": "^15.1.0",
+    "sinon": "^17.0.1"
   },
   "bugs": {
-    "url": "https://github.com/fkfk/vipstarcoind-rpc/issues"
+    "url": "https://github.com/nezirin777/vipstarcoind-rpc/issues"
   },
-  "homepage": "https://github.com/fkfk/vipstarcoind-rpc",
+  "homepage": "https://github.com/nezirin777/vipstarcoind-rpc",
   "directories": {},
-  "readme": "ERROR: No README data found!"
+  "readme": "README.md"
 }
